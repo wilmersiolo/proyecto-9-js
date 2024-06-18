@@ -169,7 +169,7 @@
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                   <div class="row mb-5">
                     <div class="col-md-12 d-flex justify-content-center">
-                      <img src="img/mayor1.jpg" width="200px" alt="">                 
+                      <img class="objet-fit img-fluid" src="img/mayor1.jpg" width="200px" alt="">                 
                     </div>
                   </div>
                   <h3>Verificador de mayoria de edad de una persona</h3>
@@ -190,9 +190,11 @@
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                   <h3>Diseñe un algoritmo que simule la siguiente tabla:</h3>
                   <div class="row mb-5">
-                    <div class="col-md-12 d-flex justify-content-center">
-                      <img src="img/tabla1.jpg" width="200px" alt="">
-                      <img src="img/tabla2.jpg" width="200px" alt="">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img class="objet-fit img-fluid" src="img/tabla1.jpg" width="200px" alt="">
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img class="objet-fit img-fluid" src="img/tabla2.jpg" width="200px" alt="">
                     </div>
                   <br>
                   <br>
@@ -220,7 +222,7 @@
                     <h3>Diseñe un algoritmo que simule la siguiente gráfica:</h3>
                     <div class="row mb-5">
                       <div class="col-md-12 d-flex justify-content-center">
-                        <img src="img/peso.jpg" width="400px" alt="">
+                        <img class="objet-fit img-fluid" src="img/peso.jpg" width="400px" alt="">
                       </div>
                     <h4>Calcular IMC</h4>
                     <div class="form-floating mb-3">
@@ -242,8 +244,8 @@
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                   <h3>Diseñe un algoritmo que simule la siguiente grafica:</h3>
                   <div class="row mb-5">
-                    <div class="col-md-12 d-flex justify-content-center">
-                      <img src="img/peso2.jpg" width="500px" alt="">
+                    <div class="col-md-12 d-flex justify-content-center ">
+                      <img class="objet-fit img-fluid" src="img/peso2.jpg" width="400px" height="400px" alt="">
                     </div>
                   <h4>Presion Arterial</h4>
                   <div class="form-floating mb-3">
@@ -256,13 +258,13 @@
                 </form>
               </div>
             </div>
-            <div id="app_js_5" class="row  d-flex justify-content-center align-items-center w-80">
-              <div class="card mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+            <div id="app_js_5" class="row  d-flex justify-content-center align-items-center">
                 <div class="card-body">
                   <div class="row text-center">
                     <h1><img src="img/peso.gif" alt="balance" width="64px"> Calculadora de Peso ideal 
                   </div>
-                  <form id="Form">
+                  <div class="col-md-10 py-5">
+                  <form id="Form" class="p-4 p-md-5 rounded-3 bg-body-tertiary">
                     <div class="mb-3">
                       <label for="sexojs" class="form-label">Sexo</label>
                       <select class="form-select" id="sexojs" required>
@@ -285,9 +287,9 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Calcular</button>
                   </form>
+                </div>
                   <div id="resultados" class="mt-4"></div>
                 </div>
-              </div>
             </div>
           <!--Fin Contenedor-->
         </main>
