@@ -113,39 +113,36 @@
               <ul class="nav flex-column vh-100">
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <i class="bi bi-house-door-fill"></i>
-                    Aplicaciones Js
+                    <h6 class="offcanvas-title" id="sidebarMenuLabel"><img src="img/casa.png" width="22px" alt=""> Aplicaciones Js</h6> 
+                    
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#app_js_1">
-                    <i class="bi bi-person-check-fill"></i>            
-                    Mayoria de edad
+                    <h6 class="offcanvas-title" id="sidebarMenuLabel "><img src="img/rangoedad.png" width="22px" alt=""> Rango De Edad</h6>          
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#app_js_2">
-                    <i class="bi bi-person-standing"></i>
-                    <i class="bi bi-person-standing-dress"></i>
-                    Peso y Estatura
+                    <h6 class="offcanvas-title" id="sidebarMenuLabel"><img src="img/altura.png" width="22px" alt=""> Peso y Estatura</h6>                    
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#app_js_3">
-                    <i class="bi bi-universal-access"></i>
-                     Calcular IMC
+                    <h6 class="offcanvas-title" id="sidebarMenuLabel"><img src="img/escala.png" width="22px" alt=""> Calcular   IMC</h6> 
+                     
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#app_js_4">
-                    <i class="bi bi-thermometer"></i>
-                    Presion  Sistolica
+                    <h6 class="offcanvas-title" id="sidebarMenuLabel"><img src="img/presion.png" width="22px" alt=""> Presion  Sistolica</h6> 
+                   
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center gap-2" href="#app_js_5">
-                    <i class="bi bi-balloon-heart"></i>
-                    Peso ideal
+                    <h6 class="offcanvas-title" id="sidebarMenuLabel"><img src="img/dieta.png" width="22px" alt=""> Peso ideal</h6> 
+                    
                   </a>
                 </li>
               </ul>
@@ -159,58 +156,56 @@
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <!--Titulo-->
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Aplicaciones Js</h1>
           </div>
           <!-- Contenedor -->
-          <div class="container  ">
+          <div class="container">
             <!--Row1 Formulario 1-->
             <div id="app_js_1" class="row  d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                   <div class="row mb-5">
                     <div class="col-md-12 d-flex justify-content-center">
-                      <img class="objet-fit img-fluid" src="img/mayor1.jpg" width="200px" alt="">                 
+                      <img class="objet-fit img-fluid" src="img/rang.png" width="400px" alt="">                 
                     </div>
                   </div>
-                  <h3>Verificador de mayoria de edad de una persona</h3>
                   <br>
                   <h4>Ingrese tu edad:</h4>
                   <div class="form-floating mb-3">
                       <input type="number" class="form-control" id="edad" placeholder="Edad">
                       <label for="edad">Edad</label>
                   </div>
-                  <button onclick="calcularEdad()" class="w-100 btn btn-lg btn-primary" type="button">Calcular</button>
+                  <button onclick="calcularEdad()" class="w-100 btn btn-lg btn-primary" type="button">Calcular Mayoria De Edad</button>
                   <hr class="my-4">
                   <div id="resultadoedad"></div>
                 </form>
               </div>
             </div>
             <div id="app_js_2" class="row  d-flex justify-content-center align-items-center">
-              <div class="col-md-10 py-5">
+              <div class="col-md-10 py-6">
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                  <h3>Diseñe un algoritmo que simule la siguiente tabla:</h3>
+                  <h3>Indicativo:</h3>
                   <div class="row mb-5">
                     <div class="col-md-6 d-flex justify-content-center">
-                      <img class="objet-fit img-fluid" src="img/tabla1.jpg" width="200px" alt="">
+                      <img class="objet-fit img-fluid" src="img/tabla1.jpg" width="300px" alt="">
                     </div>
                     <div class="col-md-6 d-flex justify-content-center">
-                      <img class="objet-fit img-fluid" src="img/tabla2.jpg" width="200px" alt="">
+                      <img class="objet-fit img-fluid" src="img/tabla2.jpg" width="300px" alt="">
                     </div>
                   <br>
                   <br>
-                  <h4>Ingresa tu genero y edad</h4>
-                      <div class="form-floating mb-3">
+                  <h4 class="py-5">Ingresa tu genero y edad</h4>
+                      <div class="form-floating mb-3 form-group">
                         <select class="form-select" id="sexo">
                             <option value="H">Hombre</option>
                             <option value="M">Mujer</option>
                         </select>
-                        <label for="sexo">Sexo</label>
+                        <label for="sexo" class="label-right">Sexo</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-3 form-group">
                         <input type="text" class="form-control" id="edadPesoEstatura" placeholder="Edad">
-                        <label for="edadPesoEstatura">Edad</label>
+                        <label for="edadPesoEstatura" class="label-right">Edad</label>
                     </div>
-                    <button onclick="peso_estatura()" class="w-100 btn btn-lg btn-primary" type="button">Calcular</button>
+                    <button onclick="peso_estatura()" class="w-100 btn btn-lg btn-primary" type="button">Calcular Datos</button>
                     <hr class="my-4">
                     <div id="resultadoPesoEstatura"></div>
                 </form>
@@ -219,7 +214,7 @@
             <div id="app_js_3" class="row  d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                    <h3>Diseñe un algoritmo que simule la siguiente gráfica:</h3>
+                    <h3>IMC</h3>
                     <div class="row mb-5">
                       <div class="col-md-12 d-flex justify-content-center">
                         <img class="objet-fit img-fluid" src="img/peso.jpg" width="400px" alt="">
@@ -227,13 +222,13 @@
                     <h4>Calcular IMC</h4>
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control" id="peso" placeholder="ingrese su peso">
-                        <label for="peso">Ingrese su peso</label>
+                        <label for="peso" class="label-right">Ingrese su peso</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="number" class="form-control" id="estatura" placeholder="ingrese su estatura">
-                        <label for="estatura">ingrese su estatura</label>
+                        <label for="estatura" class="label-right">ingrese su estatura</label>
                     </div>
-                    <button onclick="calcular_IMC()" class="w-100 btn btn-lg btn-primary" type="button">Calcular</button>
+                    <button onclick="calcular_IMC()" class="w-100 btn btn-lg btn-primary" type="button">Calcular IMC</button>
                     <hr class="my-4">
                     <div id="resultadoIMC"></div>
                   </form>
@@ -242,32 +237,31 @@
             <div id="app_js_4" class="row  d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                  <h3>Diseñe un algoritmo que simule la siguiente grafica:</h3>
+                  <h3>Presion Arterial</h3>
                   <div class="row mb-5">
                     <div class="col-md-12 d-flex justify-content-center ">
                       <img class="objet-fit img-fluid" src="img/peso2.jpg" width="400px" height="400px" alt="">
                     </div>
-                  <h4>Presion Arterial</h4>
+                  <h4>Ingrese su Presion:</h4>
                   <div class="form-floating mb-3">
                     <input type="number" class="form-control" id="presionSistolica" placeholder="Presión Sistólica">
-                    <label for="presionSistolica">Presión Sistólica</label>
+                    <label for="presion Sistolica" class="label-right">Presión Sistólica</label>
                   </div>
-                  <button onclick="calcularArterial()" class="w-100 btn btn-lg btn-primary" type="button">Calcular</button>
+                  <button onclick="calcularArterial()" class="w-100 btn btn-lg btn-primary" type="button">Calcular Presion</button>
                   <hr class="my-4">
                   <div id="resultadoPresion"></div>
                 </form>
               </div>
             </div>
-            <div id="app_js_5" class="row  d-flex justify-content-center align-items-center">
-                <div class="card-body">
+            <div id="app_js_5" class="row letra d-flex justify-content-center align-items-center">
                   <div class="row text-center">
-                    <h1><img src="img/peso.gif" alt="balance" width="64px"> Calculadora de Peso ideal 
+                    <h1><img src="img/muerto2.gif" alt="balance" width="84px"> Calculadora de Peso ideal</h1>
                   </div>
                   <div class="col-md-10 py-5">
-                  <form id="Form" class="p-4 p-md-5 rounded-3 bg-body-tertiary">
+                  <form id="Form" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                     <div class="mb-3">
                       <label for="sexojs" class="form-label">Sexo</label>
-                      <select class="form-select" id="sexojs" required>
+                      <select class="form-select" id="sexojs">
                         <option value="">Seleccione</option>
                         <option value="hombre">Hombre</option>
                         <option value="mujer">Mujer</option>
@@ -275,28 +269,27 @@
                     </div>
                     <div class="mb-3">
                       <label for="edadjs" class="form-label">Edad</label>
-                      <input type="number" class="form-control" id="edadjs" required>
+                      <input type="number" class="form-control" id="edadjs">
                     </div>
                     <div class="mb-3">
                       <label for="pesojs" class="form-label">Peso Actual (kg)</label>
-                      <input type="number" class="form-control" id="pesojs" required>
+                      <input type="number" class="form-control" id="pesojs">
                     </div>
                     <div class="mb-3">
                       <label for="alturajs" class="form-label">Altura (cm)</label>
-                      <input type="number" class="form-control" id="alturajs" required>
+                      <input type="number" class="form-control" id="alturajs">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Calcular</button>
+                    <button type="submit" class="w-100 btn btn-lg btn-primary">Calcular Peso Ideal</button>
+                    <div id="resultados" class="mt-4"></div>      
                   </form>
-                </div>
-                  <div id="resultados" class="mt-4"></div>
-                </div>
+                </div>   
             </div>
           <!--Fin Contenedor-->
         </main>
-        <footer style="display:flex; justify-content:center; background: #000; color:#fff; padding: 30px">
-        <p><strong>Desarrollado por:  Ing. Wilmer Siolo</strong></p>
-     </footer>
         <!-- Fin contenido Principal -->
+        <footer style="display:flex; justify-content:center; background: #000; color:#fff; padding: "30px">
+          <p><strong>Desarrollado por:  Ing. Wilmer Siolo</strong></p>
+       </footer>
       </div>
     </div>
 
